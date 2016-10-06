@@ -2,6 +2,16 @@
 
 Utopia is a framework for building websites. This codebase is legacy PHP which is no longer used. It was originally developed in the early 2000s when I was bout 15. It serves as an interesting reference point for the development of the current [Utopia](https://github.com/ioquatix/utopia) project.
 
+## Interesting Notes
+
+### Versioned Loading
+
+Utopia was versioned almost from the first version with loadable modules. The idea was to have a shared area with versioned dependencies (similar to how gems work). Websites could load the required modules dynamically.
+
+### Templates / Partials
+
+Utopia was designed using an XML-like template system. The core view was represented as a node, and named tags could include other nodes. This was a little bit similar to ColdFusion at the time. Because of the recursive lookup of nodes, it was easy to keep theme/layout separate from specific view/controller logic.
+
 ## License
 
 Released under the MIT license.
